@@ -6,7 +6,6 @@ date:   2022-06-24
 categories: Code
 tags:
 ---
-# Plain Text
 
 ## Think of each file as either Plain Text or "Binary"
 
@@ -151,19 +150,17 @@ Encoding | Bits per Character      | Number of Characters  | Number of Charac
  Original ASCII | 7   | 127     | 7f
  Extended ASCII | 8  | 255     | ff
 
-In the new 8-bit encoding the first 128 chars were just the ASCII bits with a leading zero-bit. This practice is called "most-significant-bit zero numbering" (a.k.a. MSB 0). The second-half of the 8-bit character set (128-256) were encoded using a supplementary "code page", specific to the operating system. A number of different standards were used for code pages. They are collectively referred to as [Extended ASCII](https://en.wikipedia.org/wiki/Extended_ASCII):
+In the new 8-bit encoding the first 128 chars were just the ASCII bits with a leading zero-bit. This practice is called "most-significant-bit zero numbering" (a.k.a. MSB 0). The second-half of the 8-bit character set (128-256) were encoded using a supplementary "code page", specific to the operating system. A number of different standards were used. They are collectively referred to as [Extended ASCII](https://en.wikipedia.org/wiki/Extended_ASCII) or [Code-pages](https://en.wikipedia.org/wiki/Code_page).
 
 - First was IBM's [EBCDIC](https://en.wikipedia.org/wiki/EBCDIC) encoding used for mainframes from 1964.
 - Then the "IBM Personal Computer" was released in 1981 with [Code Page 437](https://en.wikipedia.org/wiki/Code_page_437) which became the new standard for in the 80's.
 - The [ANSI](https://en.wikipedia.org/wiki/American_National_Standards_Institute) organisation, the (American National Standards Institute) developed the [ANSEL](https://en.wikipedia.org/wiki/ANSEL) character-set in 1985. This has nothing to do with [Windows-1252](https://en.wikipedia.org/wiki/Windows-1252#Codepage_layout) (which later became known as the ANSI-character-set).
-- The [ISO 8859-1 latin1](https://en.wikipedia.org/wiki/ISO/IEC_8859-1#Code_page_layout) code page was released in [1987](https://www.iso.org/standard/16338.html) and became the default encoding of HTTP documents. [Unicode](https://en.wikipedia.org/wiki/Unicode "Unicode") code-points 0-256 were inherited from [latin1](https://en.wikipedia.org/wiki/ISO/IEC_8859-1#Code_page_layout) with the exception of the code-points 128-159 which [latin1](https://en.wikipedia.org/wiki/ISO/IEC_8859-1#Code_page_layout) leaves undefined, and which were inherited from the [C1 Control Codes](https://en.wikipedia.org/wiki/C0_and_C1_control_codes#C1_control_codes_for_general_use).
+- The [ISO 8859-1 latin1](https://en.wikipedia.org/wiki/ISO/IEC_8859-1#Code_page_layout) code page was released in [1987](https://www.iso.org/standard/16338.html) and became the default encoding of HTTP documents. [Unicode](https://en.wikipedia.org/wiki/Unicode "Unicode") code-points 0-256 were inherited from [latin1](https://en.wikipedia.org/wiki/ISO/IEC_8859-1#Code_page_layout) with the exception of the code-points 128-159 which [latin1](https://en.wikipedia.org/wiki/ISO/IEC_8859-1#Code_page_layout) leaves undefined, and which Unicode inherited from the [C1 Control Codes](https://en.wikipedia.org/wiki/C0_and_C1_control_codes#C1_control_codes_for_general_use).
 - Classic Mac OS used the [Mac OS Roman](https://en.wikipedia.org/wiki/Mac_OS_Roman) code page.  This code-page was replaced in 2001 by [UTF-8](https://en.wikipedia.org/wiki/UTF-8) with the release of [Mac OS X](https://en.wikipedia.org/wiki/Mac_OS_X) .
-- Finally, [Windows-1252](https://en.wikipedia.org/wiki/Windows-1252#Codepage_layout) began to dominate as microsoft's market share grew and eventually replaced ISO-latin1 as the HTTP with the release of HTML5 in 2008. It is identical to Latin-1 except for the code points 128-159 (0x80-0x9F) which Latin-1 leaves undefined and Windows-1252 assigns literal symbols.
+- Finally, [Windows-1252](https://en.wikipedia.org/wiki/Windows-1252#Codepage_layout) began to dominate as microsoft's market share grew and eventually replaced [ISO 8859-1 latin1](https://en.wikipedia.org/wiki/ISO/IEC_8859-1#Code_page_layout) as the HTTP with the release of HTML5 in 2008. It is identical to [latin1](https://en.wikipedia.org/wiki/ISO/IEC_8859-1#Code_page_layout) except for the code points 128-159 (0x80-0x9F) which [latin1](https://en.wikipedia.org/wiki/ISO/IEC_8859-1#Code_page_layout) leaves undefined and Windows-1252 assigns literal symbols.
 - The [ANSI](https://en.wikipedia.org/wiki/ANSI_character_set) character-set is a [metonym](https://en.wikipedia.org/wiki/Metonymy)  that normally refers to Windows-1252. However, the name stems from a confusion whereby the phrase "ANSI Code Page" was used in Windows to refer to non-DOS encodings ANSI. The intention was that most of these would be [ANSI](https://en.wikipedia.org/wiki/ANSI "ANSI")-ISO standards such as [ISO-8859-1](https://en.wikipedia.org/wiki/ISO-8859-1 "ISO-8859-1"). But Windows-1252 was never an ANSI standard. Nevertheless "ANSI" is retained as an encoding option in Notepad++ where is means specifically the __Windows default__ encoding, used by non-Unicode programs (Windows-1252 for English installations).
 
 Predictably, the diversity of code-pages grew to be a horrific mess of incompatibility.
-
-.
 
 > Please Note: From this point onward, each reference I make to __ASCII__, is specifically to __8-bit__ ASCII. Not the original 7-bit implementation.
 
