@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  The Beginning
+title: The Beginning
 permalink: The Beginning
-date:   2022-07-01
+date: 2022-07-01
 categories: Code
 tags: 
 ---
@@ -21,16 +21,16 @@ I'm still not sure if I have 'the fundementals', but as I have been learning, I 
 Therefore I have sorted every piece of syntax into two categories. Some is of course specific to my case of a focus on data and scientific computing. But I think, we desperately need a granualar prescription of facts to learn, rather than an endless of information. Anyway, anything outside of these is two cases not really fundamentals at all:
 
 - __REMEMBER VERBATIM__
- - __FOR_REFERENCE__
+- __FOR_REFERENCE__
 
-
-Most online resources do not convey the relative importance weight of the innumerable pieces of syntax you have to learn and more easily `ctrl-f`'ed for what you need. As we all know, training delivered by committee, without a human to add a personal flair is normally terrible, regardless of the form. That is why up-voted personal opinions on stack-overflow and reddit forums are such powerful tools. 
+Most online resources do not convey the relative importance weight of the innumerable pieces of syntax you have to learn and more easily `ctrl-f`'ed for what you need. As we all know, training delivered by committee, without a human to add a personal flair is normally terrible, regardless of the form. That is why up-voted personal opinions on stack-overflow and reddit forums are such powerful tools.
 
 The key problems with most resources are:
+
 - Poor quality: [Spam writing](https://waylonwalker.com/archive/). Most resources are blogs which sacrifice quality for quantity. They are often wrong, written as if in the stream of consciousness of the author or they include [fatal errors](https://medium.com/@joseph.pyram/9-parts-of-a-url-that-you-should-know-89fea8e11713), like specifying the wrong port number. We must distinguish between high effort books, and low effort blog posts.
 - Jargon and Grammatical Ambiguity: most _"resources"_ are actually just a vehicle for the author to promote himself and his capabilities, rather than to help the reader. The audience in the author's eyes is a potential employer or customer, who is looking for red-flags or signs of intelligence and dilligence. So they skip over the dirty laymans 'fundementals' and focus some niche topic, using unexplained esoteric terms, that the person reading the article couldn't possibly know. They take shortcuts with their grammar, thinking that the concise-ness improves readability, but the resulting ambiguity, makes it unreadable to anyone who doesn't already understand it. The author's palpable indifference to these complexities is deliberate, and it is to demonstrate their skill and knowledge.
 - Excessive Granularity: Certain resources do try to put the reader first, by going in to details, but far too much. Rather than make generalisations, they describe edge cases, exeptions, rare syntax and generally bloat the text with confusion, which detracts from the thread. These explanations are equally unreadable on the first try.
-- Lack of specific examples: 
+- Lack of specific examples:
 - Being out of date. I am sure I am not the first to create a personalised resource of recommendations. But what I am trying to achieve here is clearly doomed to fail as it is a product of mid-2022. After a couple of years, the specific tools and methods I am recommending will be woefully out of date. I'm sure the real basics will be the same, but within the same topic, there is always a mix of the adaptable new front-end tools and the locked-in, old back-end services.
 
 In short, I have yet to find a resource, which explains coding, in a way that suits me. So out of frustration, I have made my own.

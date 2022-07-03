@@ -13,14 +13,12 @@ Due to inconsistent use of combining characters, and alternate ways of  writing 
 Unicode defines 2 [normalisation vectors](https://youtu.be/_mZBa3sqTrI?t=2081) for Unicode characters. Defined as follows:
 
 1. Composition (can be done with un-canonsied characters) :
-
-- Compose: squash down into smallest number of code points. I.e. , `a` + `U+0300`' `◌̀` ('[Combining Grave Accent](https://en.wikipedia.org/wiki/%CC%80)') +  is replaced by `à`.
-- Decompose: stretch out into longest number of code-points, all the accents get spun out into combining characters, i.e. `à` is replaced by  `a` + `◌̀`.
+    1. Compose: squash down into smallest number of code points. I.e. , `a` + `U+0300`' `◌̀` ('[Combining Grave Accent](https://en.wikipedia.org/wiki/%CC%80)') +  is replaced by `à`.
+    2. Decompose: stretch out into longest number of code-points, all the accents get spun out into combining characters, i.e. `à` is replaced by  `a` + `◌̀`.
 
 2. Canon (always done in conjunction with either a full composed or fully decomposed string):
-
-- Canonise `…K…`: Convert the code-point into the "canonical version" of the character. I.e. `²` becomes `2`.
-- Leave un-canonised `…`:  Leave the character as-is
+    1. Canonise `…K…`: Convert the code-point into the "canonical version" of the character. I.e. `²` becomes `2`.
+    2. Leave un-canonised `…`:  Leave the character as-is
 
 The french Wikipedia page, has [a better diagram](https://fr.wikipedia.org/wiki/Normalisation_Unicode) to show what "Composition" and "Canon" do.
 
