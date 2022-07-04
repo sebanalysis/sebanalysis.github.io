@@ -1,8 +1,7 @@
 ---
 layout: post
 title: The Beginning
-permalink: The Beginning
-date: 2022-07-01
+permalink: code/the-beginning
 categories: Code
 tags: 
 ---

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Normalised Unicode Strings
-permalink: Normalised Unicode Strings
-date: 2022-07-01
+permalink: code/normalised-unicode-strings
 categories: code
 tags:
 ---

@@ -1,8 +1,7 @@
 ---
 layout: post
-title:  Plain Text
-permalink :  Plain Text
-date:   2022-06-24
+title: Plain Text
+permalink : code/plain-text
 categories: Code
 tags:
 ---

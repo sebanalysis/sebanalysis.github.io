@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Python Strings
-permalink: Python Strings
-date: 2022-07-01
+permalink: code/python-strings
 categories: code
 tags:
 ---

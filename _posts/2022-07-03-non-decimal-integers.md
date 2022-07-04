@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Non-Decimal Integers
-permalink: Non-Decimal Integers
-date: 2022-07-01
+permalink: code/non-decimal-integers
 category: 
 tags: 
 ---
