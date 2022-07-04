@@ -5,7 +5,6 @@ permalink: code/non-decimal-integers
 category: 
 tags: 
 ---
-# Non-Decimal Integers
 
 ## Writing an Integer
 

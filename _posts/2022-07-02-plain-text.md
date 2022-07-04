@@ -5,7 +5,6 @@ permalink : code/plain-text
 categories: Code
 tags:
 ---
-
 ## Think of each file as either Plain Text or "Binary"
 
 Understand that a computer is just a bunch of files with processes being done to them, many of which are unseen to the user. Each file is _either_ text or 'binary'. Every use of the open command; `'open('file.whatever', 'r') as f:`, in python is reading the file 'from disk' and temporarily storing the series of bits in the file in RAM with the handle `'f'` now added to the name-space of the python script.
@@ -94,8 +93,8 @@ Of these characters, only Horizontal Tab `\t`, Line-Feed `\n` and Carriage-Retur
 
 |ASCII Number | Name | Often Visualized as… | C-Escape Sequence to Write into a Python String |  Python REPL: <br>`print(▯):` | Python REPL:<br> `print(f'{▯}')` |  Windows Command Line (when read from a file with `type file.txt`)
 -|-|-|-|-|-|-
-0→7|  Null → Acknowledge |`NULL`→ `ACK`| `\0`→`\6`|  `\x00`→`\x06`  | `\x00`→`\x06` | Various
-7|Bell | `BEL` | `\a` or `\7`|``|`\x07`| Plays literal audio of `ping.wav`
+0→6|  Null → Acknowledge |`NULL`→ `ACK`| `\0`→`\6`|  `\x00`→`\x06`  | `\x00`→`\x06` | Various
+7|Bell | `BEL` | `\a` or `\7`|``← Literal Bell|`\x07`| Plays literal audio of `ping.wav`
 8|Backspace | `BS`| `\b`|Deletes the character before| `\x08` | Nothing. Doesn't even delete the character before
 9|Horizontal Tab| `TAB` or White-space|`\t`| White-space| `\t` | White-space
 10|Line-Feed| Literal Line break or `LF`|`\n`|  A line break | `\n`| A literal line-break
@@ -144,7 +143,7 @@ C-Escape Sequence to Write into a Python String  | Character
 
 When computers replaced teleprinters, Americans companies started to use 8-bits characters. 8 Bits became known as a byte (or 'octet' as it still is known in French). Encoding a character with 8 rather than 7 bits, doubled the number of available characters to 256. As shown in the table below, the hexadecimal representation of a 1-byte character is highly convenient because 'ff' corresponds to 1 byte
 
-Encoding | Bits per Character      | Number of Characters  | Number of Characters in Hexadecimal
+Encoding | Bits per Character      | Maximum Character  | Maximum Characters in Hexadecimal
  -- | ------------- | --------- | -------
  Original ASCII | 7   | 127     | 7f
  Extended ASCII | 8  | 255     | ff
@@ -196,9 +195,11 @@ The "Unicode-transformation-format 8-bit" (UTF-8) algorithm reads bytes on the b
 - 1110...  This is the start of a 3 byte character
 - 11110...  This is the start of a 4 byte character
 
-In other words, the __code-point__ is only the same as the bit-value for the ASCII characters, for all other characters, the code-point is different to the value of the bits. For example to encode Unicode code-points 128-255, UTF-8  adds a start-byte of value `194` or `195` , but the continuation bytes are identical to those in the [ISO 8859-1 latin1](https://en.wikipedia.org/wiki/ISO/IEC_8859-1#Code_page_layout) code-page. So if you encode [latin1](https://en.wikipedia.org/wiki/ISO/IEC_8859-1#Code_page_layout) characters with UTF-8 and then decode them with [latin1](https://en.wikipedia.org/wiki/ISO/IEC_8859-1#Code_page_layout), it will show the expected [latin1](https://en.wikipedia.org/wiki/ISO/IEC_8859-1#Code_page_layout) characters but they will each be preceded by either `Â` or `Ã` ([latin1](https://en.wikipedia.org/wiki/ISO/IEC_8859-1#Code_page_layout)  `194` and `195` respectively).
+In other words, the __code-point__ is only the same as the bit-value for the ASCII characters, for all other characters, the code-point is different to the value of the bits.
 
 Beyond code-point 127 all characters are represented by either 2,3 or 4 bytes. UTF-8 stops at 4 bytes as there are no further code-points to be represented.
+
+UTF-8 encodes code-points 128-255 with two bytes per character: padding-byte of value `194` or `195`, and a continuation byte using the latin1 encoding of the character. So if you encode code-points 128-255 with UTF-8 and decode them with [latin1](https://en.wikipedia.org/wiki/ISO/IEC_8859-1#Code_page_layout), you will in fact see the expected [latin1](https://en.wikipedia.org/wiki/ISO/IEC_8859-1#Code_page_layout) characters but they will each be preceded by either `Â` (`latin1 194`) or `Ã` (`latin1 195`).
 
 Unicode Code Point Number | Bytes per Character | Byte-Value = Code Point Value?
 ---|---|-

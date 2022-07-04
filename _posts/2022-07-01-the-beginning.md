@@ -5,7 +5,6 @@ permalink: code/the-beginning
 categories: Code
 tags: 
 ---
-# The Beginning
 
 If you're like me; starting out from the very beginning, with zero formal computer science training, despite having a masters degree in Engineering, there are a certain number of _essential_ things to know and a vast number that you need _to be able_ to learn quickly. Naturally, you wil have begun this journey because you have a vision of what you want to achieve, be it web-development, data-science or software engineering in increasing orders of complexity. But the goal of being a technically capable contractor in even web-development will probably take at least 6 months. Personally, I want to be able to make websites, analyse data and make apps, with a particular focus on analysing data. My impression is that key fundementals are shared between all three.
 

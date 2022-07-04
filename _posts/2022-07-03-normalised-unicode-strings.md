@@ -5,8 +5,6 @@ permalink: code/normalised-unicode-strings
 categories: code
 tags:
 ---
-
-
 Due to inconsistent use of combining characters, and alternate ways of  writing the same letter, Unicode developed ways of [normalising characters](https://en.wikipedia.org/wiki/Unicode_equivalence#Normalization), for comparison and consistency.
 
 Unicode defines 2 [normalisation vectors](https://youtu.be/_mZBa3sqTrI?t=2081) for Unicode characters. Defined as follows:

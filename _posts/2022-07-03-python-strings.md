@@ -6,8 +6,6 @@ categories: code
 tags:
 ---
 
-# Python Strings
-
 ## Default String Type
 
 In Python 3, all strings are Unicode strings are stored as a series of 'code points' (the integer reference numbers of the characters) unless preceded by `b'...`, designating an ASCII-encoded byte-string.
