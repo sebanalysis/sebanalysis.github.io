@@ -16,8 +16,9 @@ PSReadline provides Menu-complete and auto-prediction. poshgit provides menu-com
 
 ## PowerShell Profile
 
-You will need to import all of these modules every time you start up by adding them to the PowerShell profile. I have described this at in [PowerShell profile](2022-10-09-powershell-profile).
+You will need to import all of these modules every time you start up by adding them to the PowerShell profile. I have described this at in [PowerShell profile](./pwsh-profile).
 
+> See my PowerShell profile: __[Download](../assets/pwsh.ps1)
 
 
 ## Install z Module

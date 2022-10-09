@@ -7,6 +7,8 @@ categories: Code
 
 A very good comprehensive summary is at [SS64](https://ss64.com/ps/).
 
+> See my PowerShell profile: __[Download](../assets/pwsh.ps1)
+
 Command and Arg | Explanation
 -|-
 `cd  $env:<environment variable>`| get the env varible, i.e. profile, appdata, programfiles

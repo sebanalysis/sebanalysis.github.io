@@ -7,7 +7,8 @@ categories: Code
 
 You need a PowerShell profile file to start modules start every time and to assign aliases. 
 
-See my PowerShell profile: __[Download](../assets/pwsh.ps1)__
+> See my PowerShell profile: __[Download](../assets/pwsh.ps1)
+
 
 Create the profile file:
 

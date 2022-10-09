@@ -14,6 +14,8 @@ Now, with Terminal, you can install a piece of software called oh-my-posh. This 
 
 You will need to import all of these modules every time you start up by adding them to the PowerShell profile. I have described this in [PowerShell profile](./pwsh-profile).
 
+> See my PowerShell profile: __[Download](../assets/pwsh.ps1)
+
 
 
 ```powershell
