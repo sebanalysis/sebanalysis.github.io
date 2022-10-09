@@ -22,5 +22,5 @@ If you want to write these into a string you need to use an f-string, i.e. `f"{0
 
 The following to escape sequences are ways of representing the decimal an integer hex in or oct as bytes, inside  a string:
 
-`\o▯▯▯` Where `▯▯▯` is an octal number
-`\x▯▯` Where `▯▯` is a hexadecimal number up to `ff`
+- `\o▯▯▯` Where `▯▯▯` is an octal number
+- `\x▯▯` Where `▯▯` is a hexadecimal number up to `ff`

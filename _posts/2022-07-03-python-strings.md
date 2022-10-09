@@ -117,3 +117,7 @@ b'\xe2\x9c\x85'
 In Python 3 on Windows, the `open('newfile.txt','w') as f` makes a new file encoded with your system default which is _still_ apparently Windows-1252 (aka. cp1252).
 
 Therefore you, need to specify the encoding as "UTF-8" every time: `open('newfile.txt','w', encoding='UTF-8') as f`.
+
+### Reading python strings
+
+When python reads a string. It will always replace `\r\n` with `\n`. So bear this in min when writing line breaks regular expressions.
