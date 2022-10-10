@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Windows Terminal UI Improvements
+title: PowerShell Windows Terminal Make-Over
 permalink: code/pwsh-ui
 categories: Code
 tags:
@@ -12,7 +12,7 @@ Now, with Terminal, you can install a piece of software called oh-my-posh. This 
 
 ## PowerShell Profile
 
-You will need to import all of these modules every time you start up by adding them to the PowerShell profile. I have described this in [PowerShell profile](./pwsh-profile).
+You will need to import both of the following modules every time you start up by adding them to the PowerShell profile. I have described the process of creating a profile in [PowerShell profile](./pwsh-profile).
 
 > See my PowerShell profile: __[Download](../assets/pwsh.ps1)
 
@@ -68,25 +68,17 @@ Symbol | Description
 -|-
 ![](../assets/20220902100357.png) ![](../assets/20220902144542.png)| github / gitlab
 ![](../assets/20220902144608.png) | branch name
-`≡`or `↑` or `↓` | The local branch in at the (same commit/ahead/behind) as the remote branch
-
-![](../assets/20220902111935.png) = git index (the staging area)
-
-Symbol | Description
--|-
-`?` |Untracked files
-`+` | Added files
-`~` | Modified files
-`-` | Removed files
-`!` | Conflicted files
-
-![](../assets/20220902113712.png)= the working directory
-
-Symbol | Description
--|-
-`!` | There are unstaged changes in the working tree (`LocalWorkingStatusSymbol`)
-`~` | There are uncommitted changes i.e. staged changes elsewhere in the working tree waiting to be committed (`LocalStagedStatusSymbol`)
-`None` | There are no unstaged or uncommitted changes to the working tree (`LocalDefaultStatusSymbol`)
+![](../assets/20220902144608.png) `≡`or `↑` or `↓` | The local branch in at the (same commit/ahead/behind) as the remote branch
+![](../assets/20220902111935.png) | git index (the staging area)
+![](../assets/20220902111935.png)`?` | Untracked files
+![](../assets/20220902111935.png)`+` | Added files
+![](../assets/20220902111935.png)`~` | Modified files
+![](../assets/20220902111935.png)`-` | Removed files
+![](../assets/20220902111935.png)`!` | Conflicted files
+![](../assets/20220902113712.png) | the working directory
+![](../assets/20220902113712.png)`!` | There are unstaged changes in the working tree (`LocalWorkingStatusSymbol`)
+![](../assets/20220902113712.png)`~` | There are uncommitted changes i.e. staged changes elsewhere in the working tree waiting to be committed (`LocalStagedStatusSymbol`)
+![](../assets/20220902113712.png)`None` | There are no unstaged or uncommitted changes to the working tree (`LocalDefaultStatusSymbol`)
 
 ### Edit The Themes
 

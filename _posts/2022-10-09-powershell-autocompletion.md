@@ -23,7 +23,7 @@ You will need to import all of these modules every time you start up by adding t
 
 ## Install z Module
 
-`z …` is functionally equivalent to `cd …` but it remember your recent calls, so you can press tab halfway through to autocomplete. It prioritises autocompletion suggestions via recency and frequency. Z is the most useful module I have.
+`z …` is functionally equivalent to `cd …` but it remembers your recent calls, so you can press tab halfway through to autocomplete. It prioritises autocompletion suggestions via recency and frequency. Z is the most useful module I have.
 
 A quick-start guide is [here](https://www.hanselman.com/blog/spend-less-time-cding-around-directories-with-the-powershell-z-shortcut).
 
