@@ -64,21 +64,24 @@ Now you can go into the settings of your PowerShell profile in the terminal and 
 
 ### git symbols
 
+[StackOverFlow](https://stackoverflow.com/questions/65602969/understanding-the-git-symbols-in-oh-my-posh)
+
 Symbol | Description
 -|-
-![](../assets/20220902100357.png) ![](../assets/20220902144542.png)| github / gitlab
-![](../assets/20220902144608.png) | branch name
-![](../assets/20220902144608.png) `≡`or `↑` or `↓` | The local branch in at the (same commit/ahead/behind) as the remote branch
-![](../assets/20220902111935.png) | git index (the staging area)
-![](../assets/20220902111935.png)`?` | Untracked files
-![](../assets/20220902111935.png)`+` | Added files
-![](../assets/20220902111935.png)`~` | Modified files
-![](../assets/20220902111935.png)`-` | Removed files
-![](../assets/20220902111935.png)`!` | Conflicted files
-![](../assets/20220902113712.png) | the working directory
-![](../assets/20220902113712.png)`!` | There are unstaged changes in the working tree (`LocalWorkingStatusSymbol`)
-![](../assets/20220902113712.png)`~` | There are uncommitted changes i.e. staged changes elsewhere in the working tree waiting to be committed (`LocalStagedStatusSymbol`)
-![](../assets/20220902113712.png)`None` | There are no unstaged or uncommitted changes to the working tree (`LocalDefaultStatusSymbol`)
+![](../assets/20220902100357.png) ![](../assets/20220902144542.png)| Remote: GitHub / GitLab
+![](../assets/20220902144608.png) | Branch name
+![](../assets/20220902144608.png) `≡` | Remote: 'Up to date'
+![](../assets/20220902144608.png) `↑`  | Remote: Ahead
+![](../assets/20220902144608.png) `↓` | Remote: behind
+![](../assets/20220902111935.png)`?` | Worktree: Untracked files
+![](../assets/20220902111935.png)`~` | Worktree: Modified files
+![](../assets/index.png)`+` |  Index: Staged new files  (`LocalWorkingStatusSymbol`)
+![](../assets/index.png)`~` | Index: Staged Modified files  (`LocalStagedStatusSymbol`)
+![](../assets/index.png)`!` | Index: Conflicted files
+
+
+
+
 
 ### Edit The Themes
 
