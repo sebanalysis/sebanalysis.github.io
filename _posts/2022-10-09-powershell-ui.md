@@ -72,12 +72,12 @@ Symbol | Description
 ![](../assets/20220902144608.png) | Branch name
 ![](../assets/20220902144608.png) `≡` | Remote: 'Up to date'
 ![](../assets/20220902144608.png) `↑`  | Remote: Ahead
-![](../assets/20220902144608.png) `↓` | Remote: behind
+![](../assets/20220902144608.png) `↓` | Remote: Behind
 ![](../assets/20220902111935.png)`?` | Worktree: Untracked files
 ![](../assets/20220902111935.png)`~` | Worktree: Modified files
-![](../assets/index.png)`+` |  Index: Staged new files  (`LocalWorkingStatusSymbol`)
-![](../assets/index.png)`~` | Index: Staged Modified files  (`LocalStagedStatusSymbol`)
-![](../assets/index.png)`!` | Index: Conflicted files
+![](../assets/index.jpg)`+` |  Index: Staged new files
+![](../assets/index.jpg)`~` | Index: Staged Modified files
+![](../assets/index.jpg)`?` | Index: Conflicted files
 
 
 
