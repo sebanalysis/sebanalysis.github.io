@@ -18,7 +18,7 @@ Unicode defines 2 yes-no [normalisation options](https://youtu.be/_mZBa3sqTrI?t=
     1. Canonise `…K…`: Convert the code-point into the "canonical version" of the character. I.e. `²` becomes `2`.
     2. Leave un-canonised `…`:  Leave the character as-is
 
-The french Wikipedia page, has [a better diagram](https://fr.wikipedia.org/wiki/Normalisation_Unicode) to show what "Composition" and "Canon" do.
+The french Wikipedia page, has [a better diagram](https://fr.wikipedia.org/wiki/Normalisation_Unicode) to show some examples of what "Composition" and "Canon" do.
 
 These two methods provide a matrix of 4 possible normalised forms of unicode strings, with the crypic names "NFC", "NFD", "NFKC", "NFKD":
 
@@ -27,7 +27,7 @@ These two methods provide a matrix of 4 possible normalised forms of unicode str
 __Non-Canonical__ | `NFC` | `NFD`
 __Canonical__ | `NFKC` | `NFKD`
 
-The function `unicodedata.normalize( "form", "string" )` takes one of these four normalisation forms as an arguement and returns a normalised string.
+The function `unicodedata.normalize( "form", "string" )` takes one of these four normalisation forms as an argument and returns a normalised string.
 
 ***
 
