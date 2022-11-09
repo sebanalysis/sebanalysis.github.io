@@ -41,6 +41,7 @@ Each combination of 𝒓 items has many ways of arranging the order, known as pe
 ## The Equations
 
 All combinations (with or without repetition) and permutations (without repetition) are found using some version of the [binomial coefficient equation](https://en.wikipedia.org/wiki/Binomial_coefficient):. This equation, often vocalised as '𝒏 choose 𝒓' or '𝒏 choose 𝒌' is expressed as either: $nCr$ or, $\binom{n}{r}$.
+
 $$\binom{n}{r} = \frac{n!}{r!(n-r)!} $$
 
 -| Combination<br>(𝒓 is Unordered) | Permutation<br>(𝒓 is Ordered)
@@ -61,7 +62,7 @@ With or without Repetition | With Repetitions (types) | Without Repetitions (Ins
 Equation | [Multiset](https://en.wikipedia.org/wiki/Multiset#Counting_multisets) $$\binom{n+r-1}{r}$$ | [Combination](https://en.wikipedia.org/wiki/Combination#Number_of_k-combinations) $$\binom{n}{r}$$ | [Permuation without repetition](https://en.wikipedia.org/wiki/Permutation#Permutations_without_repetitions)$$ r!\binom{n}{r} $$ | [Permuation with repetition](https://en.wikipedia.org/wiki/Permutation#Permutations_with_repetition) $$ n^r $$
 Selection (𝒓) | $$𝒓=3$$ E.g. <br> ![](../assets/20220831035806.png)|$$𝒓=3$$ E.g. <br>![](../assets/20220831050703.png)|$$r=3$$ E.g. <br> ![](../assets/20220831051434.png) |$$𝒓 = 3$$ E.g. <br>![](../assets/20220831055329.png)
 Population (𝒏) | ![](../assets/20220831041049.png) or blank$$𝒏=10$$ | ![](../assets/20220831055814.png)$$𝒏=10$$| ![](../assets/20220831055814.png)$$𝒏=10$$|![](../assets/20220831041857.png)$$𝒏=10$$
-Count |  $$220$$ |  $$120$$| $$720$$ | $$1000$$
+Count |  $220$ |  $120$| $720$ | $1000$
 
 
 ## Examples
