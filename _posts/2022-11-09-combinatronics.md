@@ -1,11 +1,11 @@
 ---
 layout: post
-title: PowerShell Commands
-permalink: code/pwsh-commands
+title: Combinatronic Maths
+permalink: code/combinatronics
 categories: Code
 ---
 
-# Combinatronics
+# Combinatronic  Maths
 ## The Four Relevant Factors
 
 Four things you need to identify for any combinatorics question:
