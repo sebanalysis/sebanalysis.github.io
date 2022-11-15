@@ -1,7 +1,9 @@
 ---
 layout: post
 ---
-
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 "Floats" or "Floating Point Numbers", are approximations of decimal numbers, using binary notation.
 
 In mathematics, we commonly write long or short decimal numbers in the form:
