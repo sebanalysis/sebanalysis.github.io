@@ -4,6 +4,6 @@ description: >-
   A place to learn about the taxonomy of things.
 twitter_username: sebanalysis
 github_username: sebanalysis
-remote_theme: mmistakes/minimal-mistakes
+remote_theme:  rahul-bothra/parchment
 plugins:
   - jekyll-include-cache
