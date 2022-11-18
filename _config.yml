@@ -7,3 +7,4 @@ github_username: sebanalysis
 remote_theme:  rahul-bothra/parchment
 plugins:
   - jekyll-include-cache
+  - jekyll-remote-theme
