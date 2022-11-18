@@ -1,5 +1,5 @@
 ---
-layoutposts
+layout: posts
 title: Python f-Strings
 permalink: code/f-strings
 categories: Code

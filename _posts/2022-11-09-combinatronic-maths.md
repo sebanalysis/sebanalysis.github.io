@@ -1,12 +1,10 @@
 ---
-layoutposts
+layout: posts
 ---
 
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
-
-
 
 Combinatronics is the mathematics which enables you to calculate the number of different combinations you can get when you make a selection from a population. E.g. You have a bag of 10  uniquely balls. How many different ways are there of selecting 3 balls?
 
@@ -28,9 +26,9 @@ Four things you need to identify for any combinatorics question:
 Each selection of size 𝒓 items has many ways of arranging the order, known as permutations. Assuming no repetition of object types, there are 𝒓! permutations for each combination. If there is repetition, there is a much more complicated equation for the ratio.
 
 - In a 'combination' the order is irrelevant and we count each time the same item types appears in the resulting selection but ignore combinations with a different order. Each combination has a number of possible permutations, which we ignore. E.g. in a slot machine with three rollers where the permutations collectively count as 1 combination
-    - I.e.   🍇🍍🍊 ≡ 🍍🍇🍊 ≡ 🍍🍊🍇.
+  - I.e.   🍇🍍🍊 ≡ 🍍🍇🍊 ≡ 🍍🍊🍇.
 - In a 'permutation', the order is relevant and we count every order of object types that appears in the resulting selection. E.g. Numbers in a combination lock, or a committee with assigned roles where the distinction between permutations is important.
-    - I.e.  1️⃣2️⃣3️⃣  ≠ 2️⃣3️⃣1️⃣  ≠ 3️⃣1️⃣2️⃣
+  - I.e.  1️⃣2️⃣3️⃣  ≠ 2️⃣3️⃣1️⃣  ≠ 3️⃣1️⃣2️⃣
 
 ### With or Without Repetition
 
@@ -71,10 +69,8 @@ Selection (𝒓) | $$𝒓=3$$ E.g. <br> ![](../../../assets/20220831035806.png)|
 Population (𝒏) | ![](../../../assets/20220831041049.png) or blank<br>$$𝒏=10$$ | ![](../../../assets/20220831055814.png)<br>$$𝒏=10$$| ![](../../../assets/20220831055814.png)<br>$$𝒏=10$$|![](../../../assets/20220831041857.png)<br>$$𝒏=10$$
 Count |  $$220$$ |  $$120$$| $$720$$ | $$1000$$
 
-
 ## Examples
 
 ### See Also
 
 - [Libretexts - combinations](https://math.libretexts.org/Courses/Monroe_Community_College/MTH_220_Discrete_Math/7%3A_Combinatorics/7.5%3A_Combinations_WITH_Repetitions)
-

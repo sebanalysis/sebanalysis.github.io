@@ -1,5 +1,5 @@
 ---
-layoutposts
+layout: posts
 ---
 
 ## Writing an Integer Variable

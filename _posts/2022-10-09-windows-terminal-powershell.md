@@ -1,5 +1,5 @@
 ---
-layoutposts
+layout: posts
 ---
 
 Prior to the Windows Terminal in 2020, people used to either use 'conhost'; the default program which renders both powershell and cmd, or 'cmder'; a much better open source alternative. You couldn't do much to the conhost interface and cmder required some knowledge.
@@ -20,10 +20,9 @@ Import-Module -Name Terminal-Icons
 oh-my-posh init pwsh --config "$env:USERPROFILE\profiles\bubblesextra.omp.json" | Invoke-Expression
 ```
 
-You need a PowerShell profile file to start modules start every time and to assign aliases. 
+You need a PowerShell profile file to start modules start every time and to assign aliases.
 
 > See my PowerShell profile: __[Download](../../../assets/pwsh.ps1)
-
 
 Create the profile file:
 
@@ -115,10 +114,6 @@ Symbol | Description
 ![](../../../assets/index.jpg)`~` | Index: Staged Modified files
 ![](../../../assets/index.jpg)`?` | Index: Conflicted files
 
-
-
-
-
 ### Edit The Themes
 
 You will very quickly find that the default theme is to cluttered and annoying. Each theme is completely defined by a .json config file. All the emojis are predefined in the oh-my-posh software, so all you themes do is turn features on an off, right or left align and change colours.
@@ -138,8 +133,8 @@ There is also two different git segments [git](https://ohmyposh.dev/docs/segment
 
 I use the `bubblesextra.omp.json` default theme with a few edits.
 
-
 # Powershell Autocomplete
+
 The best way to improve your efficiency in the command line is to add autocompletion. There are a few different types:
 
 - Tab-completion: press tab and it toggles folder or file suggestions.
@@ -153,7 +148,6 @@ PSReadline provides Menu-complete and auto-prediction. poshgit provides menu-com
 You will need to import all of these modules every time you start up by adding them to the PowerShell profile. I have described this at in [PowerShell profile](./pwsh-profile).
 
 > See my PowerShell profile: __[Download](../../../assets/pwsh.ps1)
-
 
 ## Install z Module
 
@@ -183,6 +177,7 @@ Poshgit provides:
 - A less pretty Git status summary information than oh-my-posh (Disabled by default if using oh-my-posh).
 
 First install nuget:
+
 ```powershell
 Install-PackageProvider -Name NuGet
 ```
@@ -190,6 +185,7 @@ Install-PackageProvider -Name NuGet
 Command line didn't work for me , so I installed from [nuget.org](https://www.nuget.org/downloads)
 
 Then install posh-git from nuget:
+
 ```powershell
 PowerShellGet\Install-Module posh-git -Scope CurrentUser -Force
 Import-Module posh-git
@@ -198,7 +194,6 @@ Import-Module posh-git
 Instructions at [GitHub](https://github.com/dahlbyk/posh-git)
 
 Now you should be able to menu-complete with git.
-
 
 ## PSReadline
 
@@ -253,5 +248,3 @@ Set-PSReadLineOption -PredictionSource HistoryAndPlugin # or History or Plugin o
 - [Predictions](https://jdhitsolutions.com/blog/powershell/8969/powershell-predicting-with-style/)
 - [Source Code](https://github.com/PowerShell/PSReadLine)
 - [Options](https://docs.microsoft.com/en-us/powershell/module/psreadline/set-psreadlineoption?view=powershell-7.2)
-
-

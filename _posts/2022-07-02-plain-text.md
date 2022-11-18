@@ -1,5 +1,5 @@
 ---
-layoutposts
+layout: posts
 ---
 ## Think of each file as either Plain Text or "Binary"
 
