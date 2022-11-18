@@ -2,13 +2,9 @@ title: sebanalysis
 email: sebanalysis@protonmail.com
 description: >-
   A place to learn about the taxonomy of things.
-baseurl: ""
-url: ""
 twitter_username: sebanalysis
 github_username: sebanalysis
 markdown: kramdown
-
-# Build settings
 theme: minima
 plugins:
   - jekyll-feed
