@@ -1,5 +1,5 @@
 ---
-layout: post
+layoutposts
 title: Normalised Unicode Strings
 permalink: code/normalised-unicode-strings
 categories: code

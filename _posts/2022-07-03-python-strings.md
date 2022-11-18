@@ -1,5 +1,5 @@
 ---
-layout: post
+layoutposts
 title: Python Strings
 permalink: code/python-strings
 categories: code
