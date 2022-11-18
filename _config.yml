@@ -5,3 +5,5 @@ description: >-
 twitter_username: sebanalysis
 github_username: sebanalysis
 remote_theme: mmistakes/minimal-mistakes
+plugins:
+  - jekyll-include-cache
