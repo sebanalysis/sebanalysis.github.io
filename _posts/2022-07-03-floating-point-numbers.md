@@ -4,6 +4,7 @@ layout: post
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
+
 "Floats" or "Floating Point Numbers", are approximations of decimal numbers, using binary notation.
 
 In mathematics, we commonly write long or short decimal numbers in the form:
@@ -33,7 +34,7 @@ __Note__ there is a further complication:
 
 "float64" (provides __between 15__ and __17 significant decimal digits__ of precision and is the standard used in python.
 
-"float32" provides from 6.92 (for values 1 to 2) up to __7.22__ decimal digits of precision (for 2<sup>24</sup> $$ \log_{10}\left(2^{24} \right ) = 7.22 $$. Above which there is a fixed interval error of 1)
+"float32" provides from 6.92 (for values 1 to 2) up to __7.22__ decimal digits of precision (for 2<sup>24</sup>,  $$ \log_{10}\left(2^{24} \right ) = 7.22 $$. Above which there is a fixed interval error of 1)
 
 The limitations of binary float representation are :
 
