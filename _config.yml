@@ -4,7 +4,7 @@ description: >-
   A place to learn about the taxonomy of things.
 twitter_username: sebanalysis
 github_username: sebanalysis
-remote_theme: rahul-bothra/parchment
+remote_theme: pages-themes/time-machine@v0.2.0
 plugins:
   - jekyll-feed
   - jekyll-include-cache
