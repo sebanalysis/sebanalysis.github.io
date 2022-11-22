@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 ---
 
 Prior to the Windows Terminal in 2020, people used to either use 'conhost'; the default program which renders both powershell and cmd, or 'cmder'; a much better open source alternative. You couldn't do much to the conhost interface and cmder required some knowledge.

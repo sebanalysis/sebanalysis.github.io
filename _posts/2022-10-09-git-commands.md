@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 title: Git Commands
 permalink: code/git-commands
 categories: Code

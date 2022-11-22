@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 ---
 
 If you're like me; starting out from the very beginning, with zero formal computer science training, despite having a masters degree in Engineering, there are a certain number of _essential_ things to know and a vast number that you need _to be able_ to learn quickly. Naturally, you will have begun this journey because you have a vision of what you want to achieve, be it web-development, data-science or software engineering in increasing orders of complexity. But to do anything economically useful,  will probably take at least 6 months. Personally, I want to be able to develop this log, analyse data and make basic web-apps, with a particular focus on analysing data. My impression is that key fundamentals are shared across all areas.
@@ -21,7 +21,7 @@ Most online resources do not convey the relative importance weight of the innume
 
 The key problems with most resources are:
 
-- Poor quality: [Spam writing](https://waylonwalker.com/archive/). Most resources are blogs which sacrifice quality for quantity. They are often wrong, written as if in the stream of consciousness of the author or they include [fatal errors](https://medium.com/@joseph.pyram/9-parts-of-a-url-that-you-should-know-89fea8e11713), like specifying the wrong port number. We must distinguish between high effort books, and low effort blog posts.
+- Poor quality: [Spam writing](https://waylonwalker.com/archive/). Most resources are blogs which sacrifice quality for quantity. They are often wrong, written as if in the stream of consciousness of the author or they include [fatal errors](https://medium.com/@joseph.pyram/9-parts-of-a-url-that-you-should-know-89fea8e11713), like specifying the wrong port number. We must distinguish between high effort books, and low effort blog post.
 - Jargon and Grammatical Ambiguity: most _"resources"_ are actually just a vehicle for the author to promote himself and his capabilities, rather than to help the reader. The audience in the author's eyes is a potential employer or customer, who is looking for red-flags or signs of intelligence and diligence. So they skip over the dirty layman's 'fundamentals' and focus some niche topic, using unexplained esoteric terms, that the person reading the article couldn't possibly know. They take shortcuts with their grammar, thinking that the concise-ness improves readability, but the resulting ambiguity, makes it unreadable to anyone who doesn't already understand it. The author's palpable indifference to these complexities is deliberate, and it is to demonstrate their skill and knowledge.
 - Excessive Granularity: Certain resources do try to put the reader first, by going in to details, but far too much. Rather than make generalisations, they describe edge cases, exceptions, rare syntax and generally bloat the text with confusion, which detracts from the thread. These explanations are equally unreadable on the first try.
 - Lack of specific examples:

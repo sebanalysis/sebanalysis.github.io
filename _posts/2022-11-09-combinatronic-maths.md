@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 ---
 
 <script type="text/javascript" id="MathJax-script" async

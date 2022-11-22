@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 title: PowerShell Commands
 permalink: code/pwsh-commands
 categories: Code
