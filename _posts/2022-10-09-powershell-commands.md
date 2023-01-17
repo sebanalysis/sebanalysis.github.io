@@ -11,6 +11,7 @@ A very good comprehensive summary is at [SS64](https://ss64.com/ps/).
 
 Command and Arg | Explanation
 -|-
+`ls env:`| Get list of environment variables
 `cd  $env:<environment variable>`| get the env varible, i.e. profile, appdata, programfiles
 `Get-PSDrive` | List drives
 `E:` | Change drive. `cd` only works with the same drive

@@ -12,19 +12,23 @@ You will need to import both of the following modules every time you start up by
 
 > See my PowerShell profile: __[Download](../../../assets/pwsh.ps1)
 
-```powershell
-# Add terminal icons
-Import-Module -Name Terminal-Icons
-
-# Add oh-my-posh
-oh-my-posh init pwsh --config "$env:USERPROFILE\profiles\bubblesextra.omp.json" | Invoke-Expression
-```
-
 You need a PowerShell profile file to start modules start every time and to assign aliases.
 
-> See my PowerShell profile: __[Download](../../../assets/pwsh.ps1)
+Windows has [6 PowerShell profiles](https://devblogs.microsoft.com/scripting/understanding-the-six-powershell-profiles/) . All hosts, current and all users is loaded every time, The others depend on the users, host and whether it is console or the ISE editing environment:
 
-Create the profile file:
+Host→ <br>  User ↓ |  All Hosts | Current Host - Console | Current Host - ISE
+-|-|-|-
+All Users | `$PsHome\Profile.ps1` | `$PsHome\Microsoft.PowerShell_profile.ps1` | `$PsHome\Microsoft.PowerShellISE_profile.ps1` 
+Current User | `$Home\[My ]Documents\Profile.ps1` | `$profile` a.k.a.;<br> `$Home\[My ]Documents\WindowsPowerShell\Profile.ps1` |  `$Home\[My ]Documents\WindowsPowerShell\Microsoft.P owerShellISE_profile.ps1`
+
+The All Hosts scripts and the All & Current User scripts for the current host scripts will run EVERY SINGLE TIME 
+you open powershell in a Host. Ie command line or the ISE software.
+
+All the following will go into the Current user, command line script found with the powershell environment variable : `$profile`.   
+
+`$PSHome` by contrast shows the installation directory for Powershell.
+
+First, create the profile file if it doesn't already exist:
 
 ```powershell
 if (!(Test-Path -Path $PROFILE ))
@@ -37,29 +41,39 @@ Open the Profile:
 notepad $profile
 ```
 
-Copy each `Import-Module` statement into the profile file and save it:
+Re-direct the profile to a file in your personal directory where all your dotfiles and profiles can be stored and synced in a git repo. Paste in the following to the `$profile` notepad file and save.
 
 ```powershell
-Import-Module -Name Terminal-Icons
+. $env:userprofile/profiles/pwsh.ps1
 ```
 
-Set-Aliases:
-
-```powershell
-Set-Alias -Name g -Value git
+Or in linux:
+```
+. "~/.config/pwsh.ps1"
 ```
 
-Set Functions (aliases to which you also want to pass arguments)
+Then run the install scripts to get all the modules.
 
-```powershell
-Function c {git commmit -am $args}
-```
+## Commands
 
-Reference the profile file in another location if you want you sync between computers as you may want the main profile file to contain PC-specific information.
+In PowerShell, the Write-Host and Write-Output cmdlets are used to write text to the console, but they have some important differences in their behavior and use cases.
 
-```powershell
-$profile = "~\profiles\pwsh.ps1"
-. $profile
+Write-Host is used to display text on the console and its output is not captured by the pipeline. This means that the output of Write-Host is not passed to the next command in the pipeline, and it is not available for redirection or variable assignment.
+
+Write-Output is used to send text to the pipeline and its output is captured by the pipeline. This means that the output of Write-Output is passed to the next command in the pipeline, and it is available for redirection or variable assignment.
+
+Here is an example that illustrates the difference between Write-Host and Write-Output:
+
+$output = "Hello World"
+Write-Host $output
+Write-Output $output
+
+In this example, the string "Hello World" is assigned to the $output variable and then passed to both Write-Host and Write-Output. The output of Write-Host is displayed on the console, but the output of Write-Output is not displayed, but it is passed to the pipeline and can be assigned to a variable or passed to the next command.
+
+In general, it's recommended to use Write-Output instead of Write-Host in scripts and functions because it allows for more flexibility and composability, but if you want to display text on the console without affecting the pipeline, you can use Write-Host.
+
+Please let me know if you have any more questions on this topic.
+
 
 ## Add Icons to `ls` standard output
 
@@ -74,10 +88,23 @@ Import-Module -Name Terminal-Icons
 
 > My oh-my-posh theme file is here: __[Download](../../../assets/bubblesextra.omp.json)__.
 
-Never install via the 'module' as it is deprecated, but seems to be referenced everywhere. I couldn't install __winget__, so I installed via __scoop__:
+On windows, install with winget:
 
 ```powershell
-scoop install https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/oh-my-posh.json
+winget install JanDeDobbeleer.OhMyPosh -s winget
+```
+
+ON linux install manually:
+
+```powershell
+sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
+sudo chmod +x /usr/local/bin/oh-my-posh
+
+mkdir ~/.poshthemes
+wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/themes.zip -O ~/.poshthemes/themes.zip
+unzip ~/.poshthemes/themes.zip -d ~/.poshthemes
+chmod u+rw ~/.poshthemes/*.omp.*
+rm ~/.poshthemes/themes.zip
 ```
 
 Check it works:
@@ -243,8 +270,66 @@ Set-PSReadLineOption -PredictionSource HistoryAndPlugin # or History or Plugin o
 
 2. Choose between Inline suggestions and tabulated suggestions. Press `F2` to change the prediction style.
 
+
 ### PSReadline Useful Resources
 
 - [Predictions](https://jdhitsolutions.com/blog/powershell/8969/powershell-predicting-with-style/)
 - [Source Code](https://github.com/PowerShell/PSReadLine)
 - [Options](https://docs.microsoft.com/en-us/powershell/module/psreadline/set-psreadlineoption?view=powershell-7.2)
+
+# Windows 'User Shell Folders'
+
+This is the name for my documents, Videos, Pictures etc.
+
+These all have registry keys. Registry keys are the default locations for various types of files and folders on a user's system. It is effectively a list of paths. 
+
+If you have an invasive work environment installed, they may change these and confuse the hell out of your. Why is my PowerShell profile suddenly in the wrong place for example? Because the registry key for the 'Personal' User Shell Folder was changed. 
+
+See the locations with:
+
+```
+Get-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders'
+```
+
+
+
+# Errors
+
+
+### [Different path in system to the powershell path](https://stackoverflow.com/questions/546583/why-is-the-powershell-environment-path-different-to-the-system-environment-path). 
+
+Change might be "delayed", so try one or more of these solutions:
+-   **Log off and on** again;
+-   Task Manager > **Restart "Windows Explorer"** (explorer.exe)
+-   **Restart your launcher app** (launchy, SlickRun, etc)
+-   **Reboot**
+
+If there are any current installs running or other processes, then you may have to wait for them to finish before the PowerShell path is updated.
+
+![[Pasted image 20230111163340.png]]
+
+### VSCode PowerShell throws errors:
+
+It may say PSFalsePS. This is a vscode specific thing which means its loading a different PS to the default for the software.
+
+### Code command prints the VSCode log to the terminal:
+
+Remove :
+
+```
+C:\Program Files\Microsoft VS Code\
+```
+
+From the path. 
+
+Add instead the `bin` subfolder:
+
+```
+C:\Program Files\Microsoft VS Code\bin
+```
+
+This will run code.cmd not code.exe.
+
+### Modules 
+Check path and
+$env:PSModulePath
