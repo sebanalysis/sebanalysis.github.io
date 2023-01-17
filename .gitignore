@@ -1,6 +1,6 @@
 *
 !.gitignore
-!_posts/*
+!_posts/*.md
 !assets/*
 !_config.yml
 !index.md
