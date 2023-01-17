@@ -39,11 +39,24 @@ Import-Module -Name Terminal-Icons
 
 > My oh-my-posh theme file is here: __[Download](../assets/bubblesextra.omp.json)__.
 
-Never install via the 'module' as it is deprecated, but seems to be referenced everywhere. I couldn't install __winget__, so I installed via __scoop__:
+The source code is here but there is no install guidance here: https://github.com/JanDeDobbeleer/oh-my-posh
+
+The install guidance is at: https://ohmyposh.dev/docs/installation/windows
+
+Never install via the 'module' as it is deprecated, but seems to be referenced everywhere. 
+
+You're meant to install via winget which is on the microsoft store but I couldn't find the module so I installed via :
 
 ```powershell
-scoop install https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/oh-my-posh.json
+Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://ohmyposh.dev/install.ps1'))
 ```
+
+It only added to the path after a system restart. At which point it can be found with the command `gcm oh-my-posh`oh-my-posh`.
+
+```
+C:\Users\$home\AppData\Local\Programs\oh-my-posh\bin\oh-my-posh.exe
+```
+
 
 Check it works:
 
@@ -78,6 +91,8 @@ Symbol | Description
 ![](../assets/index.jpg)`+` |  Index: Staged new files
 ![](../assets/index.jpg)`~` | Index: Staged Modified files
 ![](../assets/index.jpg)`?` | Index: Conflicted files
+![](../assets/save.png)| Stash
+
 
 
 
