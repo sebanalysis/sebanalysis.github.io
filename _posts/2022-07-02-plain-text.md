@@ -1,9 +1,5 @@
 ---
 layout: post
-title: Plain Text
-permalink : code/plain-text
-categories: Code
-tags:
 ---
 ## Think of each file as either Plain Text or "Binary"
 
