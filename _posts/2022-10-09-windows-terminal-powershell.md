@@ -292,6 +292,19 @@ Get-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer
 ```
 
 
+# Commands
+If you want to run a path with spaces in cmd you would just do:
+```cmd
+"C:\Program Files\My Program\myprogram.exe"
+```
+
+Whereas in powershelllyou need to add an &
+
+```powershell
+& "C:\Program Files\My Program\myprogram.exe"
+```
+
+Likewise if you want to add arguements, add a second space speared string.
 
 # Errors
 
@@ -330,6 +343,31 @@ C:\Program Files\Microsoft VS Code\bin
 
 This will run code.cmd not code.exe.
 
-### Modules 
-Check path and
-$env:PSModulePath
+### Can't Find Modules 
+
+Check $env:path and $env:PSModulePath for the module files.
+
+get-module -listavailable
+
+### WinGet
+
+Can't get source or add source:
+
+```
+winget source reset --force
+```
+
+
+## & was unexpected at this time.
+
+[You have an autorun on your CMD in the registry](https://stackoverflow.com/a/59481892)
+
+Run:
+
+```powershell
+Get-ItemProperty -ea Ignore ('HKCU:', 'HKLM:' -replace '$', '\Software\Microsoft\Command Processor') AutoRun |
+  Remove-ItemProperty -Name AutoRun -WhatIf
+```
+
+Remove the `-WhatIf` when you're happy what you're doing.
+
