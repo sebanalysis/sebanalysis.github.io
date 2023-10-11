@@ -291,6 +291,12 @@ See the locations with:
 Get-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders'
 ```
 
+# Why is there 3 Program Files Directories  on Windows?
+
+The Program Files and Program Files (x86) folders in Windows are used to store the files and resources for installed software and applications. These folders are specific to a particular user, meaning that the files and folders in these directories are only accessible to the user who installed the software or application. The Program Files (x86) folder is used to store 32-bit software, which can run on both 32-bit and 64-bit processors. This allows for software to be installed in the appropriate folder based on its architecture, which can help to ensure that the software runs correctly and that there are no compatibility issues.
+
+The ProgramData folder, on the other hand, is used to store data that is not specific to a particular user and is intended to be shared by multiple users.
+
 
 # Commands
 If you want to run a path with spaces in cmd you would just do:

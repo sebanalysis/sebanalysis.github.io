@@ -1,7 +1,0 @@
-*
-!.gitignore
-!_posts/*.md
-!assets/*
-!_config.yml
-!index.md
-!README.md

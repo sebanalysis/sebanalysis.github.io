@@ -1,0 +1,194 @@
+{
+  "main": {
+    "id": "56e5a50b199264ee",
+    "type": "split",
+    "children": [
+      {
+        "id": "e716a445857733db",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "046ccbafd900f854",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2023-10-11-merging-current-dir-with-repo.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e82cb57d9ef03ec9",
+    "type": "split",
+    "children": [
+      {
+        "id": "91ac2b0694fdd44e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6de46a3124cde5af",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0619cbf067781be6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b559fc5c87453176",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "47640769aa5c4553",
+    "type": "split",
+    "children": [
+      {
+        "id": "9b7c841b36fa2070",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d083e43b08db45fc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "2023-10-11-merging-current-dir-with-repo.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "057924699296c6ad",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "2023-10-11-merging-current-dir-with-repo.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c025054b9d27a915",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "36f25100e988db7f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "2023-10-11-merging-current-dir-with-repo.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "046ccbafd900f854",
+  "lastOpenFiles": [
+    "2023-10-11-merging-current-dir-with-repo.md",
+    "_posts/2023-05-26-database.md",
+    "_drafts/2023-07-03-fundemental-data-structures.md",
+    "_drafts/2023-07-04-css.md",
+    "_posts/2021-10-01-the-beginning.md",
+    "index.md",
+    "_posts/2023-05-26-protocol.md",
+    "_posts/2023-01-20-laws-of-software.md",
+    "_posts/assets/2023-01-20-laws-of-software",
+    "_posts/assets",
+    "_posts/2022-02-20-latex.md",
+    "_posts/2023-01-20-git-hacks.md",
+    "_drafts/2023-03-01-packaging.md",
+    "_drafts/2023-01-20-python.md",
+    "_drafts/2022-01-23-ip-packets-and-https-messages.md",
+    "_posts/2022-10-09-git.md",
+    "_posts/2022-11-31-conda.md",
+    "_posts/2022-10-09-windows-terminal-powershell.md",
+    "_posts/2023-01-23-bash.md",
+    "_posts/2022-10-08-ssh.md",
+    "assets/Pasted image 20230122194333.png",
+    "_drafts/2023-01-31-windows-permissions.md",
+    "assets/python-down-imports.png",
+    "assets/python-relative-imports.png",
+    "assets/python-up-down-imports.png",
+    "about.md",
+    "README.md",
+    "assets/Pasted image 20230121010013.png",
+    "_drafts/2022-01-23-notepad++.md",
+    "assets/Pasted image 20230111163340.png",
+    "_posts/2022-11-09-combinatronics.md",
+    "_posts/2022-11-30-github-pages.md",
+    "_posts/2022-12-31-python-shell.md",
+    "_posts/2022-11-31-conda commands.md",
+    "assets/save.png",
+    "assets/20220831041049.png",
+    "assets/20220831035806.png",
+    "assets/20220831035612.png",
+    "Excalidraw",
+    "_drafts",
+    "_posts",
+    "assets"
+  ]
+}
