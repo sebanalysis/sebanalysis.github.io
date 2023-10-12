@@ -1,7 +1,7 @@
 ---
 layout: post
 ---
-
+****
 If you're like me; starting out from the very beginning, with zero formal computer science training, despite having a masters degree in Engineering, there are a certain number of _essential_ things to know and a vast number that you need _to be able_ to learn quickly. Naturally, you will have begun this journey because you have a vision of what you want to achieve, be it web-development, data-science or software engineering in increasing orders of complexity. But to do anything economically useful,  will probably take at least 6 months. Personally, I want to be able to develop this log, analyse data and make basic web-apps, with a particular focus on analysing data. My impression is that key fundamentals are shared across all areas.
 
 You should think of the initial learning period as the simple act of getting the information on the internet into your head. Anything you make in this period will be bad or sub-optimal, you don't know enough to build anything resembling usable software. Make things, purely as a way to learn. The true product of your labour is not the thing you make, but the reference notes you create and the syntax and the methodologies that you learn.
