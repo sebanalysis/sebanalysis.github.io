@@ -1,7 +1,7 @@
 ---
 layout: post
 ---
-****
+
 If you're like me; starting out from the very beginning, with zero formal computer science training, despite having a masters degree in Engineering, there are a certain number of _essential_ things to know and a vast number that you need _to be able_ to learn quickly. Naturally, you will have begun this journey because you have a vision of what you want to achieve, be it web-development, data-science or software engineering in increasing orders of complexity. But to do anything economically useful,  will probably take at least 6 months. Personally, I want to be able to develop this log, analyse data and make basic web-apps, with a particular focus on analysing data. My impression is that key fundamentals are shared across all areas.
 
 You should think of the initial learning period as the simple act of getting the information on the internet into your head. Anything you make in this period will be bad or sub-optimal, you don't know enough to build anything resembling usable software. Make things, purely as a way to learn. The true product of your labour is not the thing you make, but the reference notes you create and the syntax and the methodologies that you learn.
@@ -12,12 +12,12 @@ You don't want to be like me, you want it to _"click"_ as soon as possible. The 
 
 I'm still not sure if I have 'the fundamentals', but as I have been learning, I have documented in real-time the errors and snags I have faced. I have created a bottom-up walk-through of reaching the fundamentals. This is not so much a comprehensive database as a story. I have highlighted when something is for all intents and purposes, essential for you to remember.
 
-Therefore I have sorted every piece of syntax into two categories. Some is of course specific to my case of a focus on data and scientific computing. But I think, we desperately need a granular prescription of facts to learn, rather than an endless of information. Anyway, anything outside of these is two cases not really fundamentals at all:
+Therefore, I advise to subconsciously sort every piece of syntax into two categories. Some is of course specific to my case of a focus on data and scientific computing. But I think, we desperately need a granular prescription of facts to learn, rather than an endless stream of information. Anyway, anything outside of these is two cases not really fundamentals at all:
 
-- __REMEMBER VERBATIM__
-- __FOR_REFERENCE__
+- __REMEMBER VERBATIM__: `\r\n` vs `\n`, key bash commands, Conda, pip and poetry commands, key environment variables, markup (HTML, Markdown) and CSS syntax. 
+- __FOR REFERENCE__: learn how to look things up quickly and how to recover info from your mind palace on prompting.
 
-Most online resources do not convey the relative importance weight of the innumerable pieces of syntax you have to learn and more easily `ctrl-f`'ed for what you need. As we all know, training delivered by committee, without a human to add a personal flair is normally terrible, regardless of the form. That is why up-voted personal opinions on stack-overflow and reddit forums are such powerful tools.
+Most online resources do not convey the relative importance weight of the innumerable pieces of syntax you have to learn and more easily `ctrl-f`'ed for what you need. As we all know, training delivered by committee, without a human to add a personal flair, is normally terrible, regardless of the form. That is why up-voted personal opinions on stack-overflow and Reddit forums are such powerful tools.
 
 The key problems with most resources are:
 
