@@ -9,9 +9,12 @@ Inside the Obsidian vault I do:
 ```
 git clone --bare git@github.com:user/repo.git .git
 git config core.bare false
+git checkout HEAD -- .gitignore
 git ls-files -z -d | xargs -0 git checkout HEAD --
 ```
 
-The last line gets the deleted files in the work-tree and pulls them from the HEAD commit into the current work-tree.
+The second last line checks the HEAD branch out. 
+
+The last line gets the file missing from the work-tree which are in the git repo, which git sees as deleted,  and pulls them from the HEAD commit into the current work-tree.
 
 The `-z` option for `git ls-files` and the `-0` option for `xargs` are specifically designed for handling filenames that have spaces, newlines, or other special characters.
