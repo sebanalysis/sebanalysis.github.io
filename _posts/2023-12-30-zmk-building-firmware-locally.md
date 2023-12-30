@@ -19,13 +19,14 @@ I have only been successful with the Docker image method of building ZMK. There 
 3. Now you can finally build your files for the first time into the `build/left/zephr/` directory.
 
 		cd /workspaces/zmk/app/
-		west build -d build/left -b nice_nano_v2 -- -DSHIELD=kyria_left -DZMK_CONFIG="/workspaces/zmk-config/config -p 
-		west build -d build/right -b nice_nano_v2 -- -DSHIELD=kyria_left -DZMK_CONFIG="/workspaces/zmk-config/config -p 
+		west build -p -d build/left -b nice_nano_v2 -- -DSHIELD=kyria_left -DZMK_CONFIG="/workspaces/zmk-config/config"
+		west build -p -d build/right -b nice_nano_v2 -- -DSHIELD=kyria_left -DZMK_CONFIG="/workspaces/zmk-config/config" 
 
-4. For future builds, simply run 
+4. For future builds, simply run:
 
 		cd /workspaces/zmk/app/
 		west build -d build/left
 		west build -d build/right
 
+1. Copy out the `/workspaces/zmk/app/build/left/zephyr/zmk.uf2` file to the local disk and drag onto the keyboard.
 
